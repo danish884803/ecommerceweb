@@ -1,16 +1,110 @@
-# React + Vite
+🛒 E-Commerce Product Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🔗 Live Demo:
+https://ecommerceweb-tau-flax.vercel.app/
 
-Currently, two official plugins are available:
+📌 Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A minimal and responsive e-commerce web application that fetches product data from a public mock API and allows users to explore products using different views such as All Products, Best Products, and Least Products.
 
-## React Compiler
+The project focuses on clean component-based architecture, proper API handling, and simple UI interactions without backend complexity.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🧰 Tech Stack
 
-## Expanding the ESLint configuration
+React (Hooks & Functional Components)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Vite
+
+JavaScript (ES6+)
+
+CSS
+
+Fetch API
+
+Vercel (Deployment)
+
+🌐 API Used
+
+FakeStore API
+
+https://fakestoreapi.com/products
+
+
+Product rating: rating.rate
+
+Product price: price
+
+✨ Features
+
+Fetch products using HTTP requests
+
+Display products in a responsive grid layout
+
+Filter views:
+
+All Products
+
+Best Products (Top-rated)
+
+Least Products (Lowest-rated)
+
+Product detail modal on card click
+
+Add to Favorites (front-end only)
+
+Favorites count indicator
+
+Loading indicator while fetching data
+
+Graceful error handling
+
+Fully responsive (mobile & desktop)
+
+⭐ Bonus Features
+
+Product detail modal view
+
+Add to Favorites using React state
+
+Real-time favorite count badge
+
+📐 Assumptions
+
+Best Products = Top 5 products sorted by highest rating.rate
+
+Least Products = Bottom 5 products sorted by lowest rating.rate
+
+Favorites are stored only in front-end state (no persistence or backend)
+
+▶️ How to Run Locally
+
+Clone the repository:
+
+git clone <your-github-repo-url>
+
+
+Navigate to the project directory:
+
+cd ecommerceweb
+
+
+Install dependencies:
+
+npm install
+
+
+Start the development server:
+
+npm run dev
+
+
+Open in browser:
+
+http://localhost:5173
+
+🚀 Deployment
+
+The project is deployed on Vercel and fetches data directly from the public API.
+
+🔗 Live URL:
+https://ecommerceweb-tau-flax.vercel.app/
