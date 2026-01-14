@@ -56,7 +56,7 @@ export default function Home() {
     <div className="container">
       {/* Header */}
       <div className="header">
-        <h1>🛒 Minimal E-Commerce</h1>
+        <h1>🛒 E-Commerce</h1>
         <div className="fav-count">❤️ Favorites: {favorites.length}</div>
       </div>
 
